@@ -1,3 +1,8 @@
+" compilar en c++
+map<c-a> :w <CR> :!g++ -std=c++11 %  -o  t <CR>
+map<c-e> :! ./t < entrada.in >salida.out <CR> 
+map<c-x> :vsplit entrada.in <CR> :split salida.out <CR>
+" ./%< es el ejecutable
 set title
 set number
 set mouse=a
@@ -15,6 +20,10 @@ set relativenumber
 set laststatus=2
 set noshowmode
 set autoread
+set autoindent
+set confirm
+set splitbelow
+set splitright
 
 call plug#begin('~/.vim/plugged')
 " temas
