@@ -26,7 +26,7 @@ set ttyfast
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
 
 " template lenguajes
-au BufNewFile *.cpp 0r ~/template.cpp | :38
+au BufNewFile *.cpp 0r ~/template.cpp | :19
 au BufNewFile *.java 0r ~/template.java | :8
 au BufNewFile *.py 0r ~/template.py | :15
 
